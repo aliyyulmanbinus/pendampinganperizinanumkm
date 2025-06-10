@@ -636,7 +636,7 @@ export default function HomePage() {
                 </li>
                 <li className="flex items-center space-x-2">
                   <Mail className="w-4 h-4" />
-                  <span>info@pendampinganperizinanumkm.com</span>
+                  <span>info@gmail.com</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Phone className="w-4 h-4" />

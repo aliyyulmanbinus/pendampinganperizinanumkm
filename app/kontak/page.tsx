@@ -67,9 +67,9 @@ export default function KontakPage() {
       icon: <Mail className="w-6 h-6" />,
       title: "Email",
       details: [
-        "info@pendampinganperizinanumkm.com",
-        "konsultasi@pendampinganperizinanumkm.com",
-        "support@pendampinganperizinanumkm.com",
+        "info@gmail.com",
+        "konsultasi@gmail.com",
+        "support@gmail.com",
       ],
     },
     {
@@ -539,7 +539,7 @@ export default function KontakPage() {
                 </li>
                 <li className="flex items-center space-x-2">
                   <Mail className="w-4 h-4" />
-                  <span>info@pendampinganperizinanumkm.com</span>
+                  <span>info@gmail.com</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Phone className="w-4 h-4" />
