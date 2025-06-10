@@ -179,7 +179,7 @@ export default function HomePage() {
             <div className="space-y-6">
               <Badge className="bg-yellow-500 text-blue-900 hover:bg-yellow-400">Solusi Perizinan Terpercaya</Badge>
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                Solusi Bisnis Anda dalam Pendampingan Perizinan UMKM
+                Partner Pendampingan Perizinan UMKM No 1 di Indonesia
               </h1>
               <p className="text-xl text-blue-100 leading-relaxed">
                 Kami membantu Anda memahami, mengelola, dan menyelesaikan kebutuhan perizinan bisnis melalui layanan
@@ -459,7 +459,7 @@ export default function HomePage() {
 
           {/* Tax Consultation Services */}
           <div className="text-center mb-12">
-            <h3 className="text-3xl lg:text-4xl font-bold text-blue-900 mb-4">Layanan Konsultasi Pajak</h3>
+            <h3 className="text-3xl lg:text-4xl font-bold text-blue-900 mb-4">Layanan Konsultasi Pendampingan Perizinan UMKM</h3>
             <div className="w-16 h-1 bg-yellow-500 mx-auto"></div>
           </div>
 
@@ -580,12 +580,13 @@ export default function HomePage() {
       {/* Footer */}
       <footer id="kontak" className="bg-gray-900 text-white py-16">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="md:col-span-2">
-              <h3 className="text-2xl font-bold mb-4">PendampinganPerizinanUMKM</h3>
-              <p className="text-gray-300 mb-6 leading-relaxed">
-                Solusi terpercaya untuk kebutuhan perizinan bisnis Anda. Kami siap membantu mengembangkan UMKM
-                Indonesia.
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4">
+                PendampinganPerizinanUMKM
+              </h3>
+              <p className="text-sm sm:text-base text-gray-300 mb-6 leading-relaxed">
+                Solusi terpercaya untuk kebutuhan perizinan bisnis Anda. Kami siap membantu mengembangkan UMKM Indonesia.
               </p>
               <div className="flex space-x-4">
                 <a href="#" className="bg-green-600 hover:bg-green-700 p-3 rounded-full transition-colors">
