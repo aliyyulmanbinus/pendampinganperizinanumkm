@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import { MapPin, Phone, Mail, Clock, Send, MessageCircle, ArrowRight, ChevronDown } from "lucide-react"
+import { Menu, X, MapPin, Phone, Mail, Clock, Send, MessageCircle, ArrowRight, ChevronDown } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -23,6 +23,7 @@ export default function KontakPage() {
     message: "",
   })
 
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -92,58 +93,86 @@ export default function KontakPage() {
     <div className="min-h-screen bg-white scroll-smooth">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white shadow-sm border-b">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
-            <Link href="/" className="flex-shrink-0">
-              <h1 className="text-xl font-bold text-blue-900">PendampinganPerizinanUMKM</h1>
-            </Link>
-            <nav className="hidden md:flex items-center space-x-8">
-              <Link href="/" className="text-gray-700 hover:text-blue-900 transition-colors">
-                Beranda
-              </Link>
-              <Link href="/#tentang" className="text-gray-700 hover:text-blue-900 transition-colors">
-                Tentang Kami
-              </Link>
+        <div className="container mx-auto px-2 sm:px-4">
+          <div className="flex flex-wrap items-center justify-between h-auto min-h-[64px] py-2">
+            {/* Logo */}
+            <div className="flex-shrink-0">
+              <h1 className="text-sm sm:text-base md:text-lg font-bold text-blue-900">
+                Pendampingan Perizinan UMKM
+              </h1>
+            </div>
+
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex items-center space-x-4 md:space-x-6 lg:space-x-8">
+              <a href="#beranda" className="text-gray-700 hover:text-blue-900 transition-colors">Beranda</a>
+              <a href="#tentang" className="text-gray-700 hover:text-blue-900 transition-colors">Tentang Kami</a>
               <DropdownMenu>
                 <DropdownMenuTrigger className="flex items-center text-gray-700 hover:text-blue-900 transition-colors">
                   Layanan <ChevronDown className="ml-1 h-4 w-4" />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
-                  <DropdownMenuItem>
-                    <Link href="/#layanan" className="w-full">
-                      Layanan Konsultasi
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <Link href="/#layanan" className="w-full">
-                      Layanan Pembuatan SOP
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <Link href="/#layanan" className="w-full">
-                      Layanan Perizinan
-                    </Link>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <Link href="/#layanan" className="w-full">
-                      Layanan Training Teknis
-                    </Link>
-                  </DropdownMenuItem>
+                  <DropdownMenuItem><a href="#layanan" className="w-full">Layanan Konsultasi</a></DropdownMenuItem>
+                  <DropdownMenuItem><a href="#layanan" className="w-full">Layanan Pembuatan SOP</a></DropdownMenuItem>
+                  <DropdownMenuItem><a href="#layanan" className="w-full">Layanan Perizinan</a></DropdownMenuItem>
+                  <DropdownMenuItem><a href="#layanan" className="w-full">Layanan Training Teknis</a></DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
-              <Link href="/artikel" className="text-gray-700 hover:text-blue-900 transition-colors">
-                Artikel
-              </Link>
-              <Link href="/kontak" className="text-blue-900 font-semibold">
-                Kontak
-              </Link>
+              <a href="/artikel" className="text-gray-700 hover:text-blue-900 transition-colors">Artikel</a>
+              <a href="/kontak" className="text-gray-700 hover:text-blue-900 transition-colors">Kontak</a>
             </nav>
+
+            {/* CTA Button */}
             <div className="hidden md:block">
               <a href="https://wa.link/84h6xq" target="_blank" rel="noopener noreferrer">
-                <Button className="bg-blue-900 hover:bg-blue-800 text-white">Konsultasi Sekarang</Button>
+                <Button className="bg-blue-900 hover:bg-blue-800 text-white text-sm px-4 py-2">
+                  Konsultasi Sekarang
+                </Button>
               </a>
             </div>
+
+            {/* Mobile Menu Button */}
+            <button className="md:hidden p-2" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+            </button>
           </div>
+
+          {/* Mobile Menu */}
+          {isMenuOpen && (
+            <div className="md:hidden py-4 border-t">
+              <nav className="flex flex-col space-y-4">
+                <a href="#beranda" className="text-gray-700 hover:text-blue-900 transition-colors">
+                  Beranda
+                </a>
+                <a href="#tentang" className="text-gray-700 hover:text-blue-900 transition-colors">
+                  Tentang Kami
+                </a>
+                <div className="space-y-2 pl-4">
+                  <div className="text-gray-700 font-medium">Layanan:</div>
+                  <a href="#layanan" className="block text-gray-700 hover:text-blue-900 transition-colors pl-2">
+                    Layanan Konsultasi
+                  </a>
+                  <a href="#layanan" className="block text-gray-700 hover:text-blue-900 transition-colors pl-2">
+                    Layanan Pembuatan SOP
+                  </a>
+                  <a href="#layanan" className="block text-gray-700 hover:text-blue-900 transition-colors pl-2">
+                    Layanan Perizinan
+                  </a>
+                  <a href="#layanan" className="block text-gray-700 hover:text-blue-900 transition-colors pl-2">
+                    Layanan Training Teknis
+                  </a>
+                </div>
+                <a href="/artikel" className="text-gray-700 hover:text-blue-900 transition-colors">
+                  Artikel
+                </a>
+                <a href="/kontak" className="text-gray-700 hover:text-blue-900 transition-colors">
+                  Kontak
+                </a>
+                <a href="https://wa.link/84h6xq" target="_blank" rel="noopener noreferrer">
+                  <Button className="bg-blue-900 hover:bg-blue-800 text-white w-full">Konsultasi Sekarang</Button>
+                </a>
+              </nav>
+            </div>
+          )}
         </div>
       </header>
 
