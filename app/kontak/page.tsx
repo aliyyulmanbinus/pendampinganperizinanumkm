@@ -104,17 +104,17 @@ export default function KontakPage() {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-4 md:space-x-6 lg:space-x-8">
-              <a href="#beranda" className="text-gray-700 hover:text-blue-900 transition-colors">Beranda</a>
-              <a href="#tentang" className="text-gray-700 hover:text-blue-900 transition-colors">Tentang Kami</a>
+              <a href="/#beranda" className="text-gray-700 hover:text-blue-900 transition-colors">Beranda</a>
+              <a href="/#tentang" className="text-gray-700 hover:text-blue-900 transition-colors">Tentang Kami</a>
               <DropdownMenu>
                 <DropdownMenuTrigger className="flex items-center text-gray-700 hover:text-blue-900 transition-colors">
                   Layanan <ChevronDown className="ml-1 h-4 w-4" />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
-                  <DropdownMenuItem><a href="#layanan" className="w-full">Layanan Konsultasi</a></DropdownMenuItem>
-                  <DropdownMenuItem><a href="#layanan" className="w-full">Layanan Pembuatan SOP</a></DropdownMenuItem>
-                  <DropdownMenuItem><a href="#layanan" className="w-full">Layanan Perizinan</a></DropdownMenuItem>
-                  <DropdownMenuItem><a href="#layanan" className="w-full">Layanan Training Teknis</a></DropdownMenuItem>
+                  <DropdownMenuItem><a href="/#layanan" className="w-full">Layanan Konsultasi</a></DropdownMenuItem>
+                  <DropdownMenuItem><a href="/#layanan" className="w-full">Layanan Pembuatan SOP</a></DropdownMenuItem>
+                  <DropdownMenuItem><a href="/#layanan" className="w-full">Layanan Perizinan</a></DropdownMenuItem>
+                  <DropdownMenuItem><a href="/#layanan" className="w-full">Layanan Training Teknis</a></DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
               <a href="/artikel" className="text-gray-700 hover:text-blue-900 transition-colors">Artikel</a>
@@ -140,24 +140,24 @@ export default function KontakPage() {
           {isMenuOpen && (
             <div className="md:hidden py-4 border-t">
               <nav className="flex flex-col space-y-4">
-                <a href="#beranda" className="text-gray-700 hover:text-blue-900 transition-colors">
+                <a href="/#beranda" className="text-gray-700 hover:text-blue-900 transition-colors">
                   Beranda
                 </a>
-                <a href="#tentang" className="text-gray-700 hover:text-blue-900 transition-colors">
+                <a href="/#tentang" className="text-gray-700 hover:text-blue-900 transition-colors">
                   Tentang Kami
                 </a>
                 <div className="space-y-2 pl-4">
                   <div className="text-gray-700 font-medium">Layanan:</div>
-                  <a href="#layanan" className="block text-gray-700 hover:text-blue-900 transition-colors pl-2">
+                  <a href="/#layanan" className="block text-gray-700 hover:text-blue-900 transition-colors pl-2">
                     Layanan Konsultasi
                   </a>
-                  <a href="#layanan" className="block text-gray-700 hover:text-blue-900 transition-colors pl-2">
+                  <a href="/#layanan" className="block text-gray-700 hover:text-blue-900 transition-colors pl-2">
                     Layanan Pembuatan SOP
                   </a>
-                  <a href="#layanan" className="block text-gray-700 hover:text-blue-900 transition-colors pl-2">
+                  <a href="/#layanan" className="block text-gray-700 hover:text-blue-900 transition-colors pl-2">
                     Layanan Perizinan
                   </a>
-                  <a href="#layanan" className="block text-gray-700 hover:text-blue-900 transition-colors pl-2">
+                  <a href="/#layanan" className="block text-gray-700 hover:text-blue-900 transition-colors pl-2">
                     Layanan Training Teknis
                   </a>
                 </div>
