@@ -391,9 +391,9 @@ export default function ArtikelPage() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Kontak</h4>
               <ul className="space-y-2 text-gray-300">
-                <li>WhatsApp: +62 812-3456-7890</li>
+                <li>WhatsApp: +62 813-7008-6608</li>
                 <li>Email: info@pendampinganperizinanumkm.com</li>
-                <li>Telepon: (021) 1234-5678</li>
+                <li>Telepon: (021) xxxx-xxxx</li>
               </ul>
             </div>
           </div>

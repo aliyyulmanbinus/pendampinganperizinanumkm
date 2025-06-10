@@ -61,7 +61,7 @@ export default function KontakPage() {
     {
       icon: <Phone className="w-6 h-6" />,
       title: "Telepon",
-      details: ["(021) 1234-5678", "+62 812-3456-7890", "Senin - Jumat: 08:00 - 17:00"],
+      details: ["(021) xxxx-xxxx", "+62 813-7008-6608", "Senin - Jumat: 08:00 - 17:00"],
     },
     {
       icon: <Mail className="w-6 h-6" />,
@@ -283,7 +283,7 @@ export default function KontakPage() {
                           value={formData.phone}
                           onChange={handleInputChange}
                           className="mt-1"
-                          placeholder="+62 812-3456-7890"
+                          placeholder="+62 813-7008-6608"
                         />
                       </div>
                       <div>
@@ -414,7 +414,7 @@ export default function KontakPage() {
                     <Phone className="w-6 h-6 text-white" />
                   </div>
                   <h4 className="font-semibold text-gray-900 mb-1">Telepon</h4>
-                  <p className="text-gray-600 text-sm">(021) 1234-5678</p>
+                  <p className="text-gray-600 text-sm">(021) xxxx-xxxx</p>
                 </div>
                 <div className="text-center">
                   <div className="w-12 h-12 bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -535,7 +535,7 @@ export default function KontakPage() {
               <ul className="space-y-2 text-gray-300">
                 <li className="flex items-center space-x-2">
                   <MessageCircle className="w-4 h-4" />
-                  <span>WhatsApp: +62 812-3456-7890</span>
+                  <span>WhatsApp: +62 813-7008-6608</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Mail className="w-4 h-4" />
@@ -543,7 +543,7 @@ export default function KontakPage() {
                 </li>
                 <li className="flex items-center space-x-2">
                   <Phone className="w-4 h-4" />
-                  <span>(021) 1234-5678</span>
+                  <span>(021) xxxx-xxxx</span>
                 </li>
               </ul>
             </div>

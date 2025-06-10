@@ -71,7 +71,7 @@ export default function HomePage() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <h1 className="text-xl font-bold text-blue-900">PendampinganPerizinanUMKM</h1>
+              <h1 className="text-xl font-bold text-blue-900">Pendampingan Perizinan UMKM</h1>
             </div>
 
             {/* Desktop Navigation */}
@@ -273,6 +273,109 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Common Problems Section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl lg:text-4xl font-bold text-blue-900 mb-4">Masalah Yang Sering TIMBUL?</h2>
+            <div className="w-16 h-1 bg-yellow-500 mx-auto mb-6"></div>
+            <p className="text-xl text-gray-700 font-medium underline">
+              Masalah yang sering terjadi pada Start-Up, UMKM dan Pengusaha
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            {/* Keterbatasan Dana - Featured */}
+            <div className="md:col-span-1 lg:col-span-1">
+              <Card className="bg-blue-900 text-white h-full border-0 shadow-lg">
+                <CardContent className="p-8">
+                  <div className="mb-6">
+                    <div className="w-16 h-16 bg-yellow-500 rounded-lg flex items-center justify-center mb-4">
+                      <span className="text-2xl">💰</span>
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4">Keterbatasan Dana</h3>
+                  <p className="text-blue-100 leading-relaxed">
+                    Pemilik Bisnis sering kali tidak memiliki budget atau tidak ingin mengeluarkan budget besar untuk
+                    pekerjaan non-core/utama
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Efisiensi Biaya */}
+            <div className="md:col-span-1 lg:col-span-1">
+              <Card className="bg-gray-50 border-2 border-gray-200 h-full shadow-lg">
+                <CardContent className="p-8">
+                  <div className="mb-6">
+                    <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                      <span className="text-2xl text-blue-900">💵</span>
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-blue-900 mb-4">Efisiensi Biaya</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Gaji fulltimer UMP untuk pekerjaan non-core/utama dianggap tidak sepadan karena intensitas pekerjaan
+                    yang tidak terus menerus.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Pengelolaan Karyawan */}
+            <div className="md:col-span-2 lg:col-span-1">
+              <Card className="bg-gray-50 border-2 border-gray-200 h-full shadow-lg">
+                <CardContent className="p-8">
+                  <div className="mb-6">
+                    <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                      <span className="text-2xl text-blue-900">👥</span>
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-blue-900 mb-4">Pengelolaan Karyawan</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Mengelola karyawan tetap dapat merepotkan, memakan waktu, dan Biaya seperti urusan BPJS, monitoring,
+                    dan lain-lain.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Karyawan Tidak Kompeten */}
+            <div className="md:col-span-1 lg:col-span-1">
+              <Card className="bg-gray-50 border-2 border-gray-200 h-full shadow-lg">
+                <CardContent className="p-8">
+                  <div className="mb-6">
+                    <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                      <span className="text-2xl text-blue-900">🚫</span>
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-blue-900 mb-4">Karyawan Tidak Kompeten</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Banyak pemilik bisnis salah dalam memilih karyawan, dan berpotensi mengeluarkan Biaya Pesangon
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+
+            {/* Focus pada Core Business */}
+            <div className="md:col-span-1 lg:col-span-1">
+              <Card className="bg-gray-50 border-2 border-gray-200 h-full shadow-lg">
+                <CardContent className="p-8">
+                  <div className="mb-6">
+                    <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                      <span className="text-2xl text-blue-900">🎯</span>
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-bold text-blue-900 mb-4">Focus pada Core Business</h3>
+                  <p className="text-gray-700 leading-relaxed">
+                    Bisnis seringkali lupa bahwa pekerjaan non-core juga sangat penting
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Services Section */}
       <section id="layanan" className="py-20">
         <div className="container mx-auto px-4">
@@ -333,6 +436,145 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Solutions Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto px-4">
+          {/* Header with background */}
+          <div className="bg-gradient-to-r from-blue-800 to-blue-900 text-white py-16 rounded-2xl mb-16">
+            <div className="text-center">
+              <h2 className="text-3xl lg:text-4xl font-bold mb-4">Solusi yang Kami Tawarkan</h2>
+              <div className="w-16 h-1 bg-yellow-500 mx-auto mb-6"></div>
+              <p className="text-xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
+                <span className="underline">
+                  Dengan berpartner dengan Kami, Anda dapat fokus pada pengembangan bisnis inti Anda tanpa terbebani
+                  urusan non-core.
+                </span>
+                <br />
+                Kami adalah solusi cerdas untuk pengelolaan Perpajakan dan Pembukuan
+              </p>
+            </div>
+          </div>
+
+          {/* Tax Consultation Services */}
+          <div className="text-center mb-12">
+            <h3 className="text-3xl lg:text-4xl font-bold text-blue-900 mb-4">Layanan Konsultasi Pajak</h3>
+            <div className="w-16 h-1 bg-yellow-500 mx-auto"></div>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Konsultasi Via Chat */}
+            <Card className="bg-white shadow-xl border-0 hover:shadow-2xl transition-all duration-300">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-6">
+                  <MessageCircle className="w-8 h-8 text-blue-900" />
+                </div>
+                <h4 className="text-2xl font-bold text-blue-900 mb-4">Konsultasi Via Chat</h4>
+                <div className="text-3xl font-bold text-blue-900 mb-6">
+                  Rp. 50.000<span className="text-lg font-normal">/Sesi</span>
+                </div>
+
+                <div className="space-y-3 mb-8 text-left">
+                  <div className="flex items-start space-x-2">
+                    <span className="text-green-500 font-bold">✓</span>
+                    <span className="text-gray-700">Konsultasi via Chat dan Email</span>
+                  </div>
+                  <div className="flex items-start space-x-2">
+                    <span className="text-green-500 font-bold">✓</span>
+                    <span className="text-gray-700">Konsultasi dengan Konsultan Pajak Tersertifikasi</span>
+                  </div>
+                  <div className="flex items-start space-x-2">
+                    <span className="text-green-500 font-bold">✓</span>
+                    <span className="text-gray-700">Konsultan Pajak</span>
+                  </div>
+                </div>
+
+                <a href="https://wa.link/84h6xq" target="_blank" rel="noopener noreferrer">
+                  <Button className="w-full bg-blue-900 hover:bg-blue-800 text-white font-semibold py-3">
+                    Pesan Konsultasi
+                  </Button>
+                </a>
+              </CardContent>
+            </Card>
+
+            {/* Konsultasi Via Telepon/E-meet */}
+            <Card className="bg-white shadow-xl border-0 hover:shadow-2xl transition-all duration-300">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-6">
+                  <Phone className="w-8 h-8 text-blue-900" />
+                </div>
+                <h4 className="text-2xl font-bold text-blue-900 mb-4">Konsultasi Via Telepon / E-meet</h4>
+                <div className="text-3xl font-bold text-blue-900 mb-6">
+                  Rp. 500.000<span className="text-lg font-normal">/jam</span>
+                </div>
+
+                <div className="space-y-3 mb-8 text-left">
+                  <div className="flex items-start space-x-2">
+                    <span className="text-green-500 font-bold">✓</span>
+                    <span className="text-gray-700">Konsultasi via zoom/Gmeet</span>
+                  </div>
+                  <div className="flex items-start space-x-2">
+                    <span className="text-green-500 font-bold">✓</span>
+                    <span className="text-gray-700">Diskusi Lebih Mendalam</span>
+                  </div>
+                  <div className="flex items-start space-x-2">
+                    <span className="text-green-500 font-bold">✓</span>
+                    <span className="text-gray-700">Konsultasi dengan Konsultan Pajak Tersertifikasi</span>
+                  </div>
+                  <div className="flex items-start space-x-2">
+                    <span className="text-green-500 font-bold">✓</span>
+                    <span className="text-gray-700">Konsultan Pajak</span>
+                  </div>
+                </div>
+
+                <a href="https://wa.link/84h6xq" target="_blank" rel="noopener noreferrer">
+                  <Button className="w-full bg-blue-900 hover:bg-blue-800 text-white font-semibold py-3">
+                    Pesan Konsultasi
+                  </Button>
+                </a>
+              </CardContent>
+            </Card>
+
+            {/* Konsultasi Tatap Muka */}
+            <Card className="bg-white shadow-xl border-0 hover:shadow-2xl transition-all duration-300">
+              <CardContent className="p-8 text-center">
+                <div className="w-16 h-16 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-6">
+                  <span className="text-2xl text-blue-900">🤝</span>
+                </div>
+                <h4 className="text-2xl font-bold text-blue-900 mb-4">Konsultasi Tatap Muka</h4>
+                <div className="text-3xl font-bold text-blue-900 mb-6">
+                  Rp. 1.000.000<span className="text-lg font-normal">/jam</span>
+                </div>
+
+                <div className="space-y-3 mb-8 text-left">
+                  <div className="flex items-start space-x-2">
+                    <span className="text-green-500 font-bold">✓</span>
+                    <span className="text-gray-700">Konsultasi secara langsung dan lebih fokus</span>
+                  </div>
+                  <div className="flex items-start space-x-2">
+                    <span className="text-green-500 font-bold">✓</span>
+                    <span className="text-gray-700">Dapat menunjukan Dokumen</span>
+                  </div>
+                  <div className="flex items-start space-x-2">
+                    <span className="text-green-500 font-bold">✓</span>
+                    <span className="text-gray-700">Konsultasi dengan Konsultan Pajak Tersertifikasi</span>
+                  </div>
+                  <div className="flex items-start space-x-2">
+                    <span className="text-green-500 font-bold">✓</span>
+                    <span className="text-gray-700">Konsultan Pajak</span>
+                  </div>
+                </div>
+
+                <a href="https://wa.link/84h6xq" target="_blank" rel="noopener noreferrer">
+                  <Button className="w-full bg-blue-900 hover:bg-blue-800 text-white font-semibold py-3">
+                    Pesan Konsultasi
+                  </Button>
+                </a>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer id="kontak" className="bg-gray-900 text-white py-16">
         <div className="container mx-auto px-4">
@@ -387,7 +629,7 @@ export default function HomePage() {
               <ul className="space-y-2 text-gray-300">
                 <li className="flex items-center space-x-2">
                   <MessageCircle className="w-4 h-4" />
-                  <span>WhatsApp: +62 812-3456-7890</span>
+                  <span>WhatsApp: +62 813-7008-6608</span>
                 </li>
                 <li className="flex items-center space-x-2">
                   <Mail className="w-4 h-4" />
@@ -395,7 +637,7 @@ export default function HomePage() {
                 </li>
                 <li className="flex items-center space-x-2">
                   <Phone className="w-4 h-4" />
-                  <span>(021) 1234-5678</span>
+                  <span>(021) xxxx-xxxx</span>
                 </li>
               </ul>
             </div>
