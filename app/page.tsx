@@ -71,7 +71,9 @@ export default function HomePage() {
           <div className="flex items-center justify-between h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <h1 className="text-xl font-bold text-blue-900">Pendampingan Perizinan UMKM</h1>
+              <h1 className="text-base sm:text-lg md:text-xl font-bold text-blue-900">
+                Pendampingan Perizinan UMKM
+              </h1>
             </div>
 
             {/* Desktop Navigation */}
