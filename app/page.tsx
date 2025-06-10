@@ -67,62 +67,40 @@ export default function HomePage() {
     <div className="min-h-screen bg-white scroll-smooth">
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white shadow-sm border-b">
-        <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-16">
+        <div className="container mx-auto px-2 sm:px-4">
+          <div className="flex flex-wrap items-center justify-between h-auto min-h-[64px] py-2">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <h1 className="text-base sm:text-lg md:text-xl font-bold text-blue-900">
+              <h1 className="text-sm sm:text-base md:text-lg font-bold text-blue-900">
                 Pendampingan Perizinan UMKM
               </h1>
             </div>
 
             {/* Desktop Navigation */}
-            <nav className="hidden md:flex items-center space-x-8">
-              <a href="#beranda" className="text-gray-700 hover:text-blue-900 transition-colors">
-                Beranda
-              </a>
-              <a href="#tentang" className="text-gray-700 hover:text-blue-900 transition-colors scroll-smooth">
-                Tentang Kami
-              </a>
+            <nav className="hidden md:flex items-center space-x-4 md:space-x-6 lg:space-x-8">
+              <a href="#beranda" className="text-gray-700 hover:text-blue-900 transition-colors">Beranda</a>
+              <a href="#tentang" className="text-gray-700 hover:text-blue-900 transition-colors">Tentang Kami</a>
               <DropdownMenu>
                 <DropdownMenuTrigger className="flex items-center text-gray-700 hover:text-blue-900 transition-colors">
                   Layanan <ChevronDown className="ml-1 h-4 w-4" />
                 </DropdownMenuTrigger>
                 <DropdownMenuContent>
-                  <DropdownMenuItem>
-                    <a href="#layanan" className="w-full">
-                      Layanan Konsultasi
-                    </a>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <a href="#layanan" className="w-full">
-                      Layanan Pembuatan SOP
-                    </a>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <a href="#layanan" className="w-full">
-                      Layanan Perizinan
-                    </a>
-                  </DropdownMenuItem>
-                  <DropdownMenuItem>
-                    <a href="#layanan" className="w-full">
-                      Layanan Training Teknis
-                    </a>
-                  </DropdownMenuItem>
+                  <DropdownMenuItem><a href="#layanan" className="w-full">Layanan Konsultasi</a></DropdownMenuItem>
+                  <DropdownMenuItem><a href="#layanan" className="w-full">Layanan Pembuatan SOP</a></DropdownMenuItem>
+                  <DropdownMenuItem><a href="#layanan" className="w-full">Layanan Perizinan</a></DropdownMenuItem>
+                  <DropdownMenuItem><a href="#layanan" className="w-full">Layanan Training Teknis</a></DropdownMenuItem>
                 </DropdownMenuContent>
               </DropdownMenu>
-              <a href="/artikel" className="text-gray-700 hover:text-blue-900 transition-colors">
-                Artikel
-              </a>
-              <a href="/kontak" className="text-gray-700 hover:text-blue-900 transition-colors">
-                Kontak
-              </a>
+              <a href="/artikel" className="text-gray-700 hover:text-blue-900 transition-colors">Artikel</a>
+              <a href="/kontak" className="text-gray-700 hover:text-blue-900 transition-colors">Kontak</a>
             </nav>
 
             {/* CTA Button */}
             <div className="hidden md:block">
               <a href="https://wa.link/84h6xq" target="_blank" rel="noopener noreferrer">
-                <Button className="bg-blue-900 hover:bg-blue-800 text-white">Konsultasi Sekarang</Button>
+                <Button className="bg-blue-900 hover:bg-blue-800 text-white text-sm px-4 py-2">
+                  Konsultasi Sekarang
+                </Button>
               </a>
             </div>
 
