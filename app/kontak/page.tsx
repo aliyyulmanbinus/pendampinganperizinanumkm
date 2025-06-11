@@ -96,7 +96,12 @@ export default function KontakPage() {
         <div className="container mx-auto px-2 sm:px-4">
           <div className="flex flex-wrap items-center justify-between h-auto min-h-[64px] py-2">
             {/* Logo */}
-            <div className="flex-shrink-0">
+            <div className="flex items-center gap-2">
+              <img
+                src="/logo-umkm.png"
+                alt="Logo UMKM"
+                className="h-6 w-auto sm:h-8"
+              />
               <h1 className="text-sm sm:text-base md:text-lg font-bold text-blue-900">
                 Pendampingan Perizinan UMKM
               </h1>
