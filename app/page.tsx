@@ -430,7 +430,7 @@ export default function HomePage() {
                   urusan non-core.
                 </span>
                 <br />
-                Kami adalah solusi cerdas untuk pengelolaan Perpajakan dan Pembukuan
+                Kami adalah solusi cerdas untuk pengelolaan Perizinan UMKM
               </p>
             </div>
           </div>
@@ -460,11 +460,11 @@ export default function HomePage() {
                   </div>
                   <div className="flex items-start space-x-2">
                     <span className="text-green-500 font-bold">✓</span>
-                    <span className="text-gray-700">Konsultasi dengan Konsultan Pajak Tersertifikasi</span>
+                    <span className="text-gray-700">Konsultasi dengan Konsultan Pendampingan Perizinan UMKM Tersertifikasi</span>
                   </div>
                   <div className="flex items-start space-x-2">
                     <span className="text-green-500 font-bold">✓</span>
-                    <span className="text-gray-700">Konsultan Pajak</span>
+                    <span className="text-gray-700">Konsultan Pendampingan Perizinan UMKM</span>
                   </div>
                 </div>
 
@@ -498,11 +498,11 @@ export default function HomePage() {
                   </div>
                   <div className="flex items-start space-x-2">
                     <span className="text-green-500 font-bold">✓</span>
-                    <span className="text-gray-700">Konsultasi dengan Konsultan Pajak Tersertifikasi</span>
+                    <span className="text-gray-700">Konsultasi dengan Konsultan Pendampingan Perizinan UMKM Tersertifikasi</span>
                   </div>
                   <div className="flex items-start space-x-2">
                     <span className="text-green-500 font-bold">✓</span>
-                    <span className="text-gray-700">Konsultan Pajak</span>
+                    <span className="text-gray-700">Konsultan Pendampingan Perizinan UMKM</span>
                   </div>
                 </div>
 
@@ -536,11 +536,11 @@ export default function HomePage() {
                   </div>
                   <div className="flex items-start space-x-2">
                     <span className="text-green-500 font-bold">✓</span>
-                    <span className="text-gray-700">Konsultasi dengan Konsultan Pajak Tersertifikasi</span>
+                    <span className="text-gray-700">Konsultasi dengan Konsultan Pendampingan Perizinan UMKM Tersertifikasi</span>
                   </div>
                   <div className="flex items-start space-x-2">
                     <span className="text-green-500 font-bold">✓</span>
-                    <span className="text-gray-700">Konsultan Pajak</span>
+                    <span className="text-gray-700">Konsultan Pendampingan Perizinan UMKM</span>
                   </div>
                 </div>
 
