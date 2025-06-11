@@ -425,16 +425,21 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           {/* Header with background */}
           <div className="bg-gradient-to-r from-blue-800 to-blue-900 text-white py-16 rounded-2xl mb-16">
-            <div className="text-center">
-              <h2 className="text-3xl lg:text-4xl font-bold mb-4">Solusi yang Kami Tawarkan</h2>
+            <div className="text-center px-4 sm:px-6 lg:px-8">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 leading-snug">
+                Solusi yang Kami Tawarkan
+              </h2>
               <div className="w-16 h-1 bg-yellow-500 mx-auto mb-6"></div>
-              <p className="text-xl text-blue-100 max-w-4xl mx-auto leading-relaxed">
+              
+              {/* Pisahkan paragraf dan optimalkan responsif */}
+              <p className="text-base sm:text-lg text-blue-100 max-w-xl mx-auto leading-relaxed mb-4">
                 <span className="underline">
-                  Dengan berpartner dengan Kami, Anda dapat fokus pada pengembangan bisnis inti Anda tanpa terbebani
-                  urusan non-core.
+                  Dengan berpartner dengan Kami, Anda dapat fokus pada pengembangan
+                  bisnis inti Anda tanpa terbebani urusan non-core.
                 </span>
-                <br />
-                Kami adalah solusi cerdas untuk pengelolaan Perizinan UMKM
+              </p>
+              <p className="text-base sm:text-lg text-blue-100 max-w-xl mx-auto leading-relaxed">
+                Kami adalah solusi cerdas untuk pengelolaan Perizinan UMKM.
               </p>
             </div>
           </div>
