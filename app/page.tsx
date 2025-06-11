@@ -70,12 +70,16 @@ export default function HomePage() {
         <div className="container mx-auto px-2 sm:px-4">
           <div className="flex flex-wrap items-center justify-between h-auto min-h-[64px] py-2">
             {/* Logo */}
-            <div className="flex-shrink-0">
+            <div className="flex items-center gap-2">
+              <img
+                src="/logo-umkm.png"
+                alt="Logo UMKM"
+                className="h-6 w-auto sm:h-8"
+              />
               <h1 className="text-sm sm:text-base md:text-lg font-bold text-blue-900">
                 Pendampingan Perizinan UMKM
               </h1>
             </div>
-
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-4 md:space-x-6 lg:space-x-8">
               <a href="#beranda" className="text-gray-700 hover:text-blue-900 transition-colors">Beranda</a>
