@@ -562,10 +562,10 @@ export default function HomePage() {
       {/* Footer */}
       <footer id="kontak" className="bg-gray-900 text-white py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="md:col-span-2">
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4">
-                PendampinganPerizinanUMKM
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 min-w-0">
+            <div className="md:col-span-2 max-w-full">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 break-words">
+                Pendampingan Perizinan UMKM
               </h3>
               <p className="text-sm sm:text-base text-gray-300 mb-6 leading-relaxed">
                 Solusi terpercaya untuk kebutuhan perizinan bisnis Anda. Kami siap membantu mengembangkan UMKM Indonesia.
@@ -604,6 +604,11 @@ export default function HomePage() {
                 <li>
                   <a href="/artikel" className="text-gray-300 hover:text-white transition-colors">
                     Artikel
+                  </a>
+                </li>
+                <li>
+                  <a href="/kontak" className="text-gray-300 hover:text-white transition-colors">
+                    Kontak
                   </a>
                 </li>
               </ul>

@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Menu, X, Search, Calendar, User, ArrowRight, ChevronLeft, ChevronRight, ChevronDown } from "lucide-react"
+import { Menu, X, Search, Calendar, User, ArrowRight, ChevronLeft, ChevronRight, ChevronDown, Mail, Phone, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
@@ -389,49 +389,77 @@ export default function ArtikelPage() {
       {/* Footer */}
       <footer id="kontak" className="bg-gray-900 text-white py-16">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="md:col-span-2">
-              <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4">
-                PendampinganPerizinanUMKM
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 min-w-0">
+            <div className="md:col-span-2 max-w-full">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 break-words">
+                Pendampingan Perizinan UMKM
               </h3>
               <p className="text-sm sm:text-base text-gray-300 mb-6 leading-relaxed">
                 Solusi terpercaya untuk kebutuhan perizinan bisnis Anda. Kami siap membantu mengembangkan UMKM Indonesia.
               </p>
+              <div className="flex space-x-4">
+                <a href="#" className="bg-green-600 hover:bg-green-700 p-3 rounded-full transition-colors">
+                  <MessageCircle className="w-5 h-5" />
+                </a>
+                <a href="#" className="bg-blue-600 hover:bg-blue-700 p-3 rounded-full transition-colors">
+                  <Mail className="w-5 h-5" />
+                </a>
+                <a href="#" className="bg-blue-500 hover:bg-blue-600 p-3 rounded-full transition-colors">
+                  <Phone className="w-5 h-5" />
+                </a>
+              </div>
             </div>
+
             <div>
               <h4 className="text-lg font-semibold mb-4">Navigasi</h4>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/" className="text-gray-300 hover:text-white transition-colors">
+                  <a href="/#beranda" className="text-gray-300 hover:text-white transition-colors">
                     Beranda
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link href="/#tentang" className="text-gray-300 hover:text-white transition-colors">
+                  <a href="/#tentang" className="text-gray-300 hover:text-white transition-colors">
                     Tentang Kami
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link href="/#layanan" className="text-gray-300 hover:text-white transition-colors">
+                  <a href="/#layanan" className="text-gray-300 hover:text-white transition-colors">
                     Layanan
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link href="/artikel" className="text-gray-300 hover:text-white transition-colors">
+                  <a href="/artikel" className="text-gray-300 hover:text-white transition-colors">
                     Artikel
-                  </Link>
+                  </a>
+                </li>
+                <li>
+                  <a href="/kontak" className="text-gray-300 hover:text-white transition-colors">
+                    Kontak
+                  </a>
                 </li>
               </ul>
             </div>
+
             <div>
               <h4 className="text-lg font-semibold mb-4">Kontak</h4>
               <ul className="space-y-2 text-gray-300">
-                <li>WhatsApp: +62 813-7008-6608</li>
-                <li>Email: info@gmail.com</li>
-                <li>Telepon: (021) xxxx-xxxx</li>
+                <li className="flex items-center space-x-2">
+                  <MessageCircle className="w-4 h-4" />
+                  <span>WhatsApp: +62 813-7008-6608</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <Mail className="w-4 h-4" />
+                  <span>info@gmail.com</span>
+                </li>
+                <li className="flex items-center space-x-2">
+                  <Phone className="w-4 h-4" />
+                  <span>(021) xxxx-xxxx</span>
+                </li>
               </ul>
             </div>
           </div>
+
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
             <p>&copy; 2024 PendampinganPerizinanUMKM. Semua hak dilindungi undang-undang.</p>
           </div>
